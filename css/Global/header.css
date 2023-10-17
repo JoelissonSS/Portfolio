@@ -10,7 +10,28 @@ header {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
 
+.header-logo-img {
+  width: 4.75rem;
+  height: 4.75rem;
+  flex-shrink: 0;
+}
+.hamburguer{
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid var(--font-1);
+  cursor: pointer;
+}
+.hamburguer::before, .hamburguer::after{
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: var(--bg-2);
+  margin-top: 5px;
 }
 
 .header-nav-list {
@@ -32,9 +53,41 @@ header {
   position: absolute;
   bottom: 0;
   left: -3px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .header-nav-list-items:hover ::after {
   width: 100%;
+}
+
+@media screen and (max-width:750px){
+  .hamburguer{
+    display: block;
+  }
+  .header-nav-list{
+    height: 0px;
+    top: 3rem;
+    right: 10%;
+    flex-direction: column;
+    
+    position: fixed;
+    z-index: 2;
+    padding: 0;
+    
+    border-radius: 0 0 5px 5px;
+    
+    opacity: 0;
+    transition: .3s;
+  }
+  .header-nav-list.active{
+    position: fixed;
+    background-color: var(--bg-1);
+    transform: scale(1.2);
+    gap: 20px;
+    top: 6rem;
+    opacity: 100%;
+    right: 10%;
+    padding: 30px;
+    height: fit-content;
+  }
 }
