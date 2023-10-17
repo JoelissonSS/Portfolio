@@ -1,0 +1,31 @@
+@import './header.css';
+@import '../Home/home.css';
+@import '../utilities/typography.css';
+@import '../utilities/details.css';
+
+:root{
+  --primary: #1D79AD;
+  --black: #000;
+
+  --bg-1: #1F282D;
+  --bg-2: #E1E1E1;
+  --bg-3:  #3D3D3D;
+  --bg-gradient: linear-gradient(274deg, #1F282D, #2F2F2F);
+  
+  --font-1: #E1E1E1;
+  font-family: "Fira Sans", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
