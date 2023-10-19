@@ -15,7 +15,9 @@
   --font-1: #E1E1E1;
   font-family: "Fira Sans", sans-serif;
 }
-
+body{
+  background-color: var(--bg-2);
+}
 *{
   margin: 0;
   padding: 0;

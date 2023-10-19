@@ -89,10 +89,14 @@
 @media (max-width: 1000px) {
   .home-content {
     grid-template-columns: 1fr;
-    grid-row: 1fr 1fr;
     place-items: center;
+    padding: 70px;
+    width: 100%;
+    transform: scale(.8);
   }
-
+  .header{
+    width: 90%;
+  }
   .home-content-title {
     order: 1;
   }
