@@ -7,6 +7,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
+  padding: 1rem;
+  box-sizing: border-box;
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
@@ -14,24 +17,24 @@ header {
 }
 
 .header-logo-img {
-  width: 4.75rem;
-  height: 4.75rem;
+  width: 50px;
+  height: 50px;
   flex-shrink: 0;
 }
-.hamburguer{
+
+.hamburguer {
   display: none;
-  border: none;
-  background: none;
-  border-top: 3px solid var(--font-1);
-  cursor: pointer;
+
 }
-.hamburguer::before, .hamburguer::after{
-  content: " ";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: var(--bg-2);
-  margin-top: 5px;
+
+
+
+.header-nav {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  width: max-content;
+  opacity: 0;
 }
 
 .header-nav-list {
@@ -40,8 +43,9 @@ header {
   position: relative;
 }
 
-.header-nav-list-items {
+.header-nav-list-items a {
   position: relative;
+  padding: .5rem;
 }
 
 .header-nav-list-items ::after {
@@ -51,7 +55,7 @@ header {
   border-radius: 5px;
   background-color: var(--bg-2);
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: -3px;
   transition: 0.5s;
 }
@@ -60,34 +64,69 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width:750px){
-  .hamburguer{
+@media screen and (max-width:750px) {
+  .hamburguer {
     display: block;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--font-1);
+    cursor: pointer;
   }
-  .header-nav-list{
-    height: 0px;
+
+  .hamburguer::before,
+  .hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--bg-2);
+    margin-top: 5px;
+    transition: .5s;
+    position: relative;
+  }
+
+  .hamburguer.active {
+    border-top-color: transparent;
+  }
+
+  .hamburguer.active::before {
+    transform: rotate(135deg);
+  }
+
+  .hamburguer.active::after {
+    top: -7px;
+
+    transform: rotate(-135deg);
+  }
+
+  .header-nav {
+    right: 13%;
     top: 3rem;
-    right: 10%;
-    flex-direction: column;
-    
     position: fixed;
     z-index: 2;
+    font-size: .1rem;
     padding: 0;
-    
-    border-radius: 0 0 5px 5px;
-    
-    opacity: 0;
-    transition: .3s;
-  }
-  .header-nav-list.active{
-    position: fixed;
     background-color: var(--bg-1);
+    border-radius: 0 0 5px 5px;
+    height: max-content;
+    transition: .3s;
+
+  }
+
+  .header-nav.active {
+    position: fixed;
     transform: scale(1.2);
-    gap: 20px;
-    top: 6rem;
-    opacity: 100%;
+    font-size: 1.4rem;
+    top: 5rem;
     right: 10%;
     padding: 30px;
-    height: fit-content;
+    visibility: visible;
+    height: max-content;
+    opacity: 90%;
+  }
+
+  .header-nav .header-nav-list {
+    flex-direction: column;
+    gap: 20px;
   }
 }
