@@ -1,16 +1,10 @@
-.initial {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
 
 .home {
   background-color: var(--bg-2);
   display: flex;
   align-items: center;
   justify-content: center;
-  user-select: none;
-  flex: 1;
+  height: calc(100vh - 70px);
 }
 
 .home-content {
