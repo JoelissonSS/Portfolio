@@ -2,21 +2,28 @@ export default function menuHamburguer() {
   const navList = document.querySelectorAll(".header-nav-list-items");
   const hamburguer = document.querySelector(".hamburguer");
   const nav = document.querySelector(".header-nav");
-
   function toggleMenu() {
     if (event.type === "touchstart") event.preventDefault(); //impedir de clicar duas vezes no mobile
-
+    
     nav.classList.toggle("active"); //alternar
     hamburguer.classList.toggle("active");
     const active = nav.classList.contains("active");
+    
 
     //acessibilidade
     hamburguer.setAttribute("aria-expanded", active);
     active
       ? hamburguer.setAttribute("aria-label", "Fechar menu")
       : hamburguer.setAttribute("aria-label", "Abrir menu");
+    active
+    ? window.addEventListener("click", toggleMenu)
+    : window.removeEventListener("click", toggleMenu); 
   }
-  //fechar menu ao clicar num link
+  //fechar clicando na tela se ele estiver aberto
+  
+ 
+    //fechar menu ao clicar num link
+
   navList.forEach((link) => {
     link.addEventListener("click", () => {
       toggleMenu();
