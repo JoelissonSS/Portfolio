@@ -1,3 +1,4 @@
-import menuHamburguer from "./modules/menu-hamburguer.js";
-
+import menuHamburguer from "./modules/menuHamburguer.js";
+import { copyOnClick } from "./modules/copyOnClick.js";
 menuHamburguer()
+copyOnClick()

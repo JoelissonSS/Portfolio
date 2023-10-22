@@ -1,0 +1,74 @@
+.aside-social{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--bg-1);
+  padding: 8px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.aside-list-link{
+  color: var(--font-1);
+  padding: 9px;
+  position: relative;
+  cursor: pointer;
+}
+.copyOnClick textarea{
+  position: absolute;
+  left: -200px;
+}
+.copyOnClick img{
+  position: relative;
+}
+#whatsapp::after,#gmail::after{
+  position: absolute;
+  padding: 12px;
+  top: 0px;
+  left: 10px;
+  width: 0px;
+  letter-spacing: .5px;
+  border-radius: 0 10px 10px 0;
+  content: "";
+  background-color: var(--bg-1);
+  transition: .5s;
+  z-index: -1;
+}
+#whatsapp:hover:after {
+  opacity: 100%;
+  width: max-content;
+  height: max-content;
+  left: 30px;
+  content: '+55(12)991594802';
+}
+
+#gmail:hover:after {
+  opacity: 100%;
+  width: max-content;
+  left: 30px;
+  content: 'joelisson997@gmail.com';
+}
+
+.popup-click{
+  position: absolute;
+  bottom: 100%;
+  background-color: var(--bg-1);
+  opacity: 0%;
+  width: max-content;
+  border-radius: 10px;
+  height: 0;
+}
+#whatsapp:hover .whatsapp{
+  display: block;
+  opacity: 90%;
+  height: fit-content;
+  padding: 10px;
+}
+#gmail:hover .gmail{
+  display: block;
+  opacity: 90%;
+  height: fit-content;
+  padding: 10px;
+}

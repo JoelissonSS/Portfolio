@@ -2,7 +2,7 @@
 @import '../Home/home.css';
 @import '../utilities/typography.css';
 @import '../utilities/details.css';
-
+@import '../Global/asideLinks.css';
 :root{
   --primary: #1D79AD;
   --black: #000;
