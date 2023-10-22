@@ -1,4 +1,4 @@
-export function copyOnClick() {
+export default function copyOnClick() {
   const data = [
     {
       icon: 'whatsapp',
