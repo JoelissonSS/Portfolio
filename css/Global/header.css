@@ -35,8 +35,8 @@ header {
   display: flex;
   gap: 0 32px;
   position: relative;
- 
-  
+
+
 }
 
 .header-nav-list-items a {
@@ -44,10 +44,10 @@ header {
   padding: .5rem;
 }
 
-.header-nav-list-items ::after {
+.header-nav-list-items a::after {
   content: "";
   height: 3px;
-  width: 30%;
+  width: var(--width, 30%);/*variavel para conseguir manipular no js */
   border-radius: 5px;
   background-color: var(--bg-2);
   position: absolute;
@@ -59,7 +59,12 @@ header {
 .header-nav-list-items:hover ::after {
   width: 100%;
 }
-.header-nav-list-items a{
+.header-nav-list-items.current ::after {
+  width: 100%;
+}
+
+
+.header-nav-list-items a {
   color: var(--font-1);
 }
 
@@ -72,6 +77,7 @@ header {
     border-top: 3px solid var(--font-1);
     cursor: pointer;
   }
+
   .hamburguer::before,
   .hamburguer::after {
     content: " ";
@@ -128,5 +134,5 @@ header {
     flex-direction: column;
     gap: 20px;
   }
-  
+
 }
