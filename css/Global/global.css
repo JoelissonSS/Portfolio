@@ -1,8 +1,11 @@
 @import './header.css';
 @import '../Home/home.css';
 @import '../utilities/typography.css';
-@import '../utilities/details.css';
+@import '../utilities/detailsHome.css';
 @import '../Global/asideLinks.css';
+@import '../About/about.css';
+@import '../utilities/components/titleSection.css';
+
 :root{
   --primary: #1D79AD;
   --black: #000;
@@ -14,7 +17,17 @@
   
   --font-1: #E1E1E1;
   font-family: "Fira Sans", sans-serif;
+
 }
+
+
+.width{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+media
+
 body{
   background-color: var(--bg-2);
 }
@@ -31,3 +44,4 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
