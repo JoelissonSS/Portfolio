@@ -1,4 +1,6 @@
-
+body{
+  padding-top: 70px;
+}
 header {
   background-color: var(--bg-1);
   position: fixed;
