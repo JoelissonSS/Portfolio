@@ -1,0 +1,41 @@
+.titleSection {
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--font-1);
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleSection h2 {
+  color: #fff;
+  display: inline;
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  position: relative;
+}
+
+.titleSection h2::after {
+  content: '';
+  bottom: -6px;
+  position: absolute;
+  display: block;
+  width: calc(100% + 20px);
+  transform: translateX(-10px);
+  height: 3px;
+  background: #1D79AD;
+  margin-bottom: 10px;
+}
+
+
+.titleSection p {
+  padding-top: 5px;
+  color: #aaaaaa;
+  font-family: Fira Sans;
+  font-weight: 400;
+}
