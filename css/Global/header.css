@@ -1,10 +1,11 @@
+
 header {
   background-color: var(--bg-1);
-  display: flex;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .header {
@@ -23,7 +24,6 @@ header {
 .header-logo-img {
   width: 50px;
   height: 50px;
-  flex-shrink: 0;
 }
 
 .hamburguer {
@@ -47,7 +47,8 @@ header {
 .header-nav-list-items a::after {
   content: "";
   height: 3px;
-  width: var(--width, 30%);/*variavel para conseguir manipular no js */
+  width: var(--width, 30%);
+  /*variavel para conseguir manipular no js */
   border-radius: 5px;
   background-color: var(--bg-2);
   position: absolute;
@@ -59,6 +60,7 @@ header {
 .header-nav-list-items:hover ::after {
   width: 100%;
 }
+
 .header-nav-list-items.current ::after {
   width: 100%;
 }
