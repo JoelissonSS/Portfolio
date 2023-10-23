@@ -33,12 +33,13 @@
   color: var(--font-1);
   position: relative;
   font-family: Fira Sans;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   max-width: 80%;
   text-align: left;
+  line-height: 130%;
 }
 @media screen and (max-width: 1200px){
   .about-section p {
@@ -61,7 +62,13 @@
 }
 @media screen and (max-width: 600px){
   .about p {
-    font-size: 18px;
+    font-size: 1rem;
+  }
+  .about img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    object-fit: contain;
   }
 }
 

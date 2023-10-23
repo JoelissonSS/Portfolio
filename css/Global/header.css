@@ -1,6 +1,4 @@
-body{
-  padding-top: 70px;
-}
+
 header {
   background-color: var(--bg-1);
   position: fixed;
@@ -14,7 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 4.375;
   padding: 1rem;
   box-sizing: border-box;
   width: 80%;

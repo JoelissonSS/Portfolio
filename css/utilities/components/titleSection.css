@@ -3,7 +3,7 @@
   text-align: center;
   margin: 0 auto;
   color: var(--font-1);
-  padding-top: 80px;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@
   color: #fff;
   display: inline;
   font-family: Fira Sans;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
@@ -34,6 +34,7 @@
 
 
 .titleSection p {
+  font-size: .8rem;
   padding-top: 5px;
   color: #aaaaaa;
   font-family: Fira Sans;
