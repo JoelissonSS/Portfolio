@@ -1,5 +1,6 @@
 
 .home {
+  
   background-color: var(--bg-2);
   display: flex;
   align-items: center;
@@ -11,7 +12,6 @@
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  width: 80%;
   max-width: 1200px;
   gap: 30px;
   padding: 4rem;
