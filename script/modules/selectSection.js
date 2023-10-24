@@ -1,4 +1,4 @@
-export default function selectSection() {
+export default async function selectSection() {
   const item = document.querySelectorAll(".header-nav-list-items");
   const section = document.querySelectorAll("section");
   let currentSection = null;
@@ -25,4 +25,4 @@ export default function selectSection() {
     }
   });
 }
-window.addEventListener("scroll", selectSection);
+window.addEventListener("scroll", selectSection, );

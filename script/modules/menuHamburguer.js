@@ -1,4 +1,4 @@
-export default function menuHamburguer() {
+export default async function menuHamburguer() {
   const navList = document.querySelectorAll(".header-nav-list-items");
   const hamburguer = document.querySelector(".hamburguer");
   const nav = document.querySelector(".header-nav");
@@ -22,6 +22,6 @@ export default function menuHamburguer() {
       toggleMenu();
     });
   });
-  hamburguer.addEventListener("click", toggleMenu);
-  hamburguer.addEventListener("touchstart", toggleMenu);
+  hamburguer.addEventListener("click", toggleMenu, {passive: true});
+  hamburguer.addEventListener("touchstart", toggleMenu, {passive: true});
 }

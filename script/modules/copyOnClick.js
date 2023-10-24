@@ -2,22 +2,20 @@ export default function copyOnClick() {
   const data = [
     {
       icon: 'whatsapp',
-      text: 'numforcopy',
+      text: '+55(12)99159-4802',
     },
     {
       icon: 'gmail',
-      text: 'emailforcopy',
+      text: 'joelisson997@gmail.com',
     },
   ]
 
   data.map( (e) => {
     const icon = document.getElementById(e.icon);
-    const text = document.getElementById(e.text);
     const popupText = document.querySelector('.' + e.icon);
     
     icon.addEventListener('click', () => {
-        text.select();
-        document.execCommand("copy");
+        navigator.clipboard.writeText(e.text)
         popupText.innerHTML = 'copiado!'
         setTimeout( () => {
           popupText.innerHTML = 'clique para copiar'

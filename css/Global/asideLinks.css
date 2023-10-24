@@ -22,8 +22,10 @@
   position: absolute;
   left: -200px;
 }
-.copyOnClick img{
+.aside-social img{
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 #whatsapp::after,#gmail::after{
   position: absolute;
