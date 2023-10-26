@@ -22,6 +22,6 @@ export default async function menuHamburguer() {
       toggleMenu();
     });
   });
-  hamburguer.addEventListener("click", toggleMenu, {passive: true});
-  hamburguer.addEventListener("touchstart", toggleMenu, {passive: true});
+  hamburguer.addEventListener("click", toggleMenu,);
+  hamburguer.addEventListener("touchstart", toggleMenu,{passive: true});
 }
