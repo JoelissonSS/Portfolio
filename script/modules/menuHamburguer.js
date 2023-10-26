@@ -4,7 +4,7 @@ export default async function menuHamburguer() {
   const nav = document.querySelector(".header-nav");
   let active;
   function toggleMenu() {
-    if (event.type === "touchstart") event.preventDefault(); //impedir de clicar duas vezes no mobile
+    if (event.type === "touchstart") hamburguer.removeEventListener("click", toggleMenu,); //impedir de clicar duas vezes no mobile
 
     nav.classList.toggle("active"); //alternar
     hamburguer.classList.toggle("active");
@@ -23,5 +23,6 @@ export default async function menuHamburguer() {
     });
   });
   hamburguer.addEventListener("click", toggleMenu,);
-  hamburguer.addEventListener("touchstart", toggleMenu,{passive: true});
+  hamburguer.addEventListener("touchstart", toggleMenu, {passive:true});
+
 }

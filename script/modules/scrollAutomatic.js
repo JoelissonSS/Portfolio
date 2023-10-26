@@ -16,10 +16,17 @@ export default function scrollAutomatic() {
       })
     }
     // parar/continuar o scroll automatico ao passar mouse sobre o elemento
+
     container.addEventListener('mousedown', () => {
       scroll = 0
     })
     container.addEventListener('mouseout', () => {
+      scroll = 2
+    })
+    container.addEventListener('touchmove', ()=>{
+      scroll = 0
+    })
+    container.addEventListener('touchend', ()=>{
       scroll = 2
     })
   }
