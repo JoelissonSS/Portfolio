@@ -5,6 +5,7 @@
 @import '../Global/asideLinks.css';
 @import '../About/about.css';
 @import '../utilities/components/titleSection.css';
+@import '../Abilities/abilities.css';
 
 @font-face {
   font-family: "Fira Sans", sans-serif;
@@ -17,6 +18,7 @@
   --bg-1: #1F282D;
   --bg-2: #E1E1E1;
   --bg-3:  #3D3D3D;
+  --bg-4: #1C2226;
   --bg-gradient: linear-gradient(274deg, #1F282D, #2F2F2F);
   
   --font-1: #E1E1E1;
@@ -40,11 +42,11 @@
 
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 4.375rem;
+  scroll-padding-top: 70px;
 }
 body{
   background-color: var(--bg-2);
-  padding-top: 4.375rem;
+  padding-top: 70px;
 }
 
 *{
