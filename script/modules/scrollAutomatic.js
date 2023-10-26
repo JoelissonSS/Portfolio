@@ -1,4 +1,4 @@
-export default async function scrollAutomatic() {
+export default function scrollAutomatic() {
   const container = document.querySelector(".container-hard-skills");
   let scroll = 2
   function scrollContent() {
