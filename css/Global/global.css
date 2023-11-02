@@ -6,6 +6,7 @@
 @import '../About/about.css';
 @import '../utilities/components/titleSection.css';
 @import '../Abilities/abilities.css';
+@import '../Projetos/projetos.css';
 
 @font-face {
   font-family: "Fira Sans", sans-serif;
@@ -19,14 +20,16 @@
   --bg-2: #E1E1E1;
   --bg-3:  #3D3D3D;
   --bg-4: #1C2226;
+  --bg-5: #283841;
   --bg-gradient: linear-gradient(274deg, #1F282D, #2F2F2F);
   
   --font-1: #E1E1E1;
+  --font-2: #1F282D;
+  --font-3: #525252;
+  --font-4: #F3F3F3;
   font-family: "Fira Sans", sans-serif;
 
 }
-
-
 .width{
   width: 80%;
   margin: 0 auto;

@@ -1,6 +1,6 @@
 export default async function selectSection() {
   const item = document.querySelectorAll(".header-nav-list-items");
-  const section = document.querySelectorAll("section");
+  const section = document.querySelectorAll("body section");
   let currentSection = null;
   section.forEach((s) => {
     const sectionVerify = s.getBoundingClientRect(); //variavel para verificar onde esta a visao do usuario
