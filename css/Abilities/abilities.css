@@ -1,7 +1,6 @@
 #Habilidades {
   background-color: var(--bg-1);
   position: relative;
-  padding-bottom: 120px;
 }
 
 #Habilidades::before {
@@ -18,11 +17,10 @@
 .containerHabilidades{
   display: flex;
   justify-content: space-around;
-  padding: 60px 0;
+  padding-top: 60px;
 }
 .hard-skills,
 .soft-skills {
-  margin-top: 40px;
   width: 400px;
   max-height: fit-content;
   padding: 1rem;
