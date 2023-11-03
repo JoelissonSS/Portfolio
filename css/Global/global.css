@@ -7,6 +7,7 @@
 @import '../utilities/components/titleSection.css';
 @import '../Abilities/abilities.css';
 @import '../Projetos/projetos.css';
+@import '../footer/footer.css';
 
 @font-face {
   font-family: "Fira Sans", sans-serif;
@@ -27,6 +28,7 @@
   --font-2: #1F282D;
   --font-3: #525252;
   --font-4: #F3F3F3;
+  --font-5: #BABABA;
   font-family: "Fira Sans", sans-serif;
 
 }
