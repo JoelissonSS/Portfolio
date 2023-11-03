@@ -1,9 +1,6 @@
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<img src="/img/projects/mockup-Portfolio.png">
+## Meu Portfólio
 
 Construí este portfólio pessoal a partir do zero, usando apenas tecnologias básicas da web, com a finalidade de demonstrar minhas habilidades e apresentar minha identidade.
 <!-- CONTACT -->
