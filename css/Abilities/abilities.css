@@ -16,6 +16,7 @@
 }
 .containerHabilidades{
   display: flex;
+  gap: 40px;
   justify-content: space-around;
   padding-top: 60px;
 }
