@@ -3,7 +3,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com](https://i.imgur.com/9U5LSDS.png))
+<img src="/img/projects/mockup-Portfolio.png">
 
 Construí este portfólio pessoal a partir do zero, usando apenas tecnologias básicas da web, com a finalidade de demonstrar minhas habilidades e apresentar minha identidade.
 <!-- CONTACT -->
