@@ -60,7 +60,7 @@
   display: none;
   bottom: 100%;
   background-color: var(--bg-1);
-  opacity: 100%;
+  opacity: 90%;
   width: max-content;
   border-radius: 10px;
 }
