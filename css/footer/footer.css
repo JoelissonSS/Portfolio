@@ -1,18 +1,21 @@
-footer{
-  background: linear-gradient(274deg, #1F282D, #2F2F2F   );
+footer {
+  background: linear-gradient(274deg, #1F282D, #2F2F2F);
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
+
 .footer-p {
   display: flex;
   gap: 40px;
   padding: 60px 0;
   position: relative;
 }
-.footer-p div{
+
+.footer-p div {
   flex: 1;
 }
-.footer-p::after{
+
+.footer-p::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -23,44 +26,72 @@ footer{
   opacity: 70%;
 }
 
-.footer-text h3{
+.footer-text h3 {
   margin-bottom: 16px;
   color: var(--font-4);
   font-size: 24px;
 }
-.footer-text p{
+
+.footer-text p {
   color: var(--font-5);
   font-size: 14px;
   line-height: 140%
 }
 
-.footer-contact h4{
+.footer-contact h4 {
   color: var(--font-4);
   justify-self: flex-end;
-  
+
 }
-.footer-contact p{
+
+.footer-contact p {
   color: var(--font-5);
   margin-left: 8px;
 }
-.footer-contact{
+
+.footer-contact {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: flex-end;
   gap: 5px;
 }
-.footer-contact p:nth-last-child(1){
+
+.footer-contact p:nth-last-child(1) {
   grid-column: 2;
   align-self: flex-start;
 }
 
-.footer > p{
+.footer>p {
   padding: 40px 0;
   text-align: center;
   font-size: 16px;
   color: var(--font-1);
 }
-.footer > p a{
+
+.footer>p a {
   color: #15AAFF;
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .footer-p {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+  }
+
+  .footer-text p {
+    font-size: 14px;
+  }
+
+  .footer-p {}
+}
+
+@media (max-width: 600px) {
+  .footer-p {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
 }
