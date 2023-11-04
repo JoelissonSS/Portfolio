@@ -39,6 +39,7 @@
   max-width: 80%;
   text-align: left;
   line-height: 130%;
+  margin-top: 40px;
 }
 @media screen and (max-width: 1200px){
   .about-section p {
