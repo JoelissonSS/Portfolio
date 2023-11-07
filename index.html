@@ -14,240 +14,250 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Yantramanav:wght@400;500;700&display=swap" rel="stylesheet">
 
 </head>
+<noscript>
+  <div style="color: red;">
+    <p>Esta página precisa do JavaScript para funcionar corretamente.</p>
+    <p>Por favor, habilite o JavaScript no seu navegador.</p>
+  </div>
+</noscript>
 
-<body>
+<body >
+  <div id="app" style="display: none;">
 
-  <header>
-    <div class="header width">
-      <a class="header-logo" href="/">
-        <img class="header-logo-img" src="img/Logo.svg" alt="logo Joelisson Santana"></a>
-      <nav class="header-nav">
-        <ul class="header-nav-list" id="nav">
-          <li class="header-nav-list-items"><a href="#Início" target="_parent">Início</a></li>
-          <li class="header-nav-list-items"><a href="#Sobre" target="_parent">Sobre</a></li>
-          <li class="header-nav-list-items"><a href="#Habilidades" target="_parent">Habilidades</a></li>
-          <li class="header-nav-list-items"><a href="#Projetos" target="_parent">Projetos</a></li>
-        </ul>
-      </nav>
-      <button class="hamburguer" aria-label="Abrir menu" aria-haspopup="true" aria-controls="nav" aria-expanded="false"></button>
-    </div>
-  </header>
-
-  <aside class="aside-social">
-    <a class="aside-list-link" href="https://github.com/JoelissonSS" target="_blank" rel="external"><img src="img/icons/github.svg" alt="ícone github"></a>
-    <a class="aside-list-link" href="https://www.linkedin.com/in/jo%C3%A9lisson-santana" target="_blank" rel="external"><img src="img/icons/linkedin.svg" alt="ícone linkedin"></a>
-    <span class="aside-list-link copyOnClick" id="gmail">
-      <span class="popup-click gmail">clique para copiar</span>
-      <img src="img/icons/gmail.svg" alt="ícone gmail">
-    </span>
-    <span class="aside-list-link copyOnClick" id="whatsapp">
-      <span class="popup-click whatsapp">clique para copiar</span>
-      <img src="img/icons/whatsapp.svg" alt="ícone whatsapp">
-    </span>
-  </aside>
-
-  <main>
-
-    <section class="home " id="Início">
-      <div class="details home-content width">
-        <h1 class="home-content-title">
-          <p class="home-content-title-p">Olá, sou</p>
-          <span class="home-content-title-name">Joélisson Santana</span>
-          <p class="home-content-title-p">Desenvolvedor
-            <abbr title="Desenvolvimento front-end é a criação da parte visual de sites e aplicativos. Como desenvolvedor front-end, meu trabalho é garantir que seu site seja atraente, rápido e fácil de usar." class="home-content-title-p-emphasis">
-              Front-end
-            </abbr>
-            & <abbr title="Como designer de UI, meu trabalho é criar interfaces visuais atraentes e intuitivas para sites e aplicativos, tornando a experiência do usuário agradável e eficiente." class="home-content-title-p-emphasis">
-              UI
-            </abbr>
-            Designer
-          </p>
-        </h1>
-        <img class="home-content-img" src="img/Perfil.png" alt="Foto de Joélisson">
-
-    </section>
-
-    <section id="Sobre" class="padding-heigth">
-
-      <div class="titleSection">
-        <h2>Sobre</h2>
-        <p>Conheça minha jornada como desenvolvedor frontend e minha paixão pela desenvolvimento web</p>
+    <header>
+      <div class="header width">
+        <a class="header-logo" href="/">
+          <img class="header-logo-img" src="img/Logo.svg" alt="logo Joelisson Santana"></a>
+        <nav class="header-nav">
+          <ul class="header-nav-list" id="nav">
+            <li class="header-nav-list-items"><a href="#Início" target="_parent">Início</a></li>
+            <li class="header-nav-list-items"><a href="#Sobre" target="_parent">Sobre</a></li>
+            <li class="header-nav-list-items"><a href="#Habilidades" target="_parent">Habilidades</a></li>
+            <li class="header-nav-list-items"><a href="#Projetos" target="_parent">Projetos</a></li>
+          </ul>
+        </nav>
+        <button class="hamburguer" aria-label="Abrir menu" aria-haspopup="true" aria-controls="nav" aria-expanded="false"></button>
       </div>
-      <div class="about width">
-        <article class="about-section ">
-          <p class=""> <span></span>Meu nome é Joélisson Silva Santana. Desde a infância, sempre fui fascinado pela área da tecnologia. Aos 18 anos, iniciei minha jornada de estudos em programação e logo descobri minha paixão pelo desenvolvimento web. Desde então, tenho me dedicado intensamente a aprimorar minhas habilidades nessa área.</p>
-          <img src="img/about/window.svg" alt="janela de navegador">
-        </article>
-        <article class="about-section">
-          <img class="" src="img/about/progammer.svg" alt="ilustração progamador">
-          <p class=""> <span></span>Atualmente, estou focado em aperfeiçoar meus conhecimentos e dominar as tecnologias mais recentes do mercado. Estou dedicado a criar sites com um design moderno, estrutura limpa e escalável. Minha jornada de aprendizado é contínua e estou sempre em busca de aprimorar minhas habilidades.</p>
-        </article>
-      </div>
-    </section>
+    </header>
 
-    <section id="Habilidades" class="padding-heigth">
-      <div class="titleSection ">
-        <h2>Habilidades</h2>
-        <p>Essas são minhas principais habilidades interpessoal, profissional e técnica</p>
-      </div>
-      <div class="containerHabilidades width">
-        <article class="hard-skills">
-          <h3>Hard Skills</h3>
-          <div class="container-hard-skills">
-            <div class="hard-skills-items">
-              <img src="img/technologies/html-5.svg" alt="logo html">
-              <h4>HTML-5</h4>
-              <p>Linguagem de marcação para criar e estruturar conteúdo na web.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/css-3.svg" alt="logo css">
-              <h4>CSS3</h4>
-              <p>linguagem de estilo de páginas da web, design e formatação visual.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/js.svg" alt="logo javascript">
-              <h4>JavaScrip</h4>
-              <p>JavaScript: usada para interatividade em websites, aplicativos e servidores Node.js.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/git.svg" alt="logo git">
-              <h4>Git</h4>
-              <p>Sistema de controle de versão local para colaboração e rastreamento de código-fonte.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/github.svg" alt="logo github">
-              <h4>Github</h4>
-              <p>Plataforma de hospedagem de código-fonte e colaboração em projetos de desenvolvimento.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/reactjs.svg" alt="logo reactjs">
-              <h4>React JS</h4>
-              <p>Biblioteca JavaScript para criar interfaces de usuário interativas e reativas.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/nextjs.svg" alt="logo nextjs">
-              <h4>NextJs</h4>
-              <p>Framework JavaScript para construir aplicações web rápidas e escaláveis.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/figma.svg" alt="logo figma">
-              <h4>Figma</h4>
-              <p>Ferramenta de design colaborativa para criar protótipos e interfaces gráficas.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/gimp.svg" alt="logo gimp">
-              <h4>Gimp</h4>
-              <p>Software de edição de imagens gratuito e de código aberto.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/sass.svg" alt="logo sass">
-              <h4>Sass</h4>
-              <p>Pré-processador CSS que simplifica e otimiza o estilo de páginas.</p>
-            </div>
-            <div class="hard-skills-items">
-              <img src="img/technologies/tailwind.svg" alt="logo tailwind">
-              <h4>Tailwind</h4>
-              <p>Estrutura de design utilitário para desenvolvimento ágil de interfaces web.</p>
-            </div>
-          </div>
-        </article>
-        <article class="soft-skills">
-          <h3>Soft skills</h3>
-          <p class="soft-skills-items">Resolução de problemas de forma eficiente</p>
-          <p class="soft-skills-items">Atenção aos detalhes</p>
-          <p class="soft-skills-items">Criatividade na busca por soluções</p>
-          <p class="soft-skills-items">Capacidade de aprendizado contínuo</p>
-        </article>
-      </div>
-    </section>
+    <aside class="aside-social">
+      <a class="aside-list-link" href="https://github.com/JoelissonSS" target="_blank" rel="external"><img src="img/icons/github.svg" alt="ícone github"></a>
+      <a class="aside-list-link" href="https://www.linkedin.com/in/jo%C3%A9lisson-santana" target="_blank" rel="external"><img src="img/icons/linkedin.svg" alt="ícone linkedin"></a>
+      <span class="aside-list-link copyOnClick" id="gmail">
+        <span class="popup-click gmail">clique para copiar</span>
+        <img src="img/icons/gmail.svg" alt="ícone gmail">
+      </span>
+      <span class="aside-list-link copyOnClick" id="whatsapp">
+        <span class="popup-click whatsapp">clique para copiar</span>
+        <img src="img/icons/whatsapp.svg" alt="ícone whatsapp">
+      </span>
+    </aside>
 
-    <section id="Projetos" class="padding-heigth">
-      <div class="container-projects width">
+    <main>
+
+      <section class="home " id="Início">
+        <div class="details home-content width">
+          <h1 class="home-content-title">
+            <p class="home-content-title-p">Olá, sou</p>
+            <span class="home-content-title-name">Joélisson Santana</span>
+            <p class="home-content-title-p">Desenvolvedor
+              <abbr title="Desenvolvimento front-end é a criação da parte visual de sites e aplicativos. Como desenvolvedor front-end, meu trabalho é garantir que seu site seja atraente, rápido e fácil de usar." class="home-content-title-p-emphasis">
+                Front-end
+              </abbr>
+              & <abbr title="Como designer de UI, meu trabalho é criar interfaces visuais atraentes e intuitivas para sites e aplicativos, tornando a experiência do usuário agradável e eficiente." class="home-content-title-p-emphasis">
+                UI
+              </abbr>
+              Designer
+            </p>
+          </h1>
+          <img class="home-content-img" src="img/Perfil.png" alt="Foto de Joélisson">
+
+      </section>
+
+      <section id="Sobre" class="padding-heigth">
+
         <div class="titleSection">
-          <h2>Projetos</h2>
-          <p>Veja meus principais projetos que desenvolvi para aplicar meus conhecimentos na prática e adquirir experiência no desenvolvimento.</p>
+          <h2>Sobre</h2>
+          <p>Conheça minha jornada como desenvolvedor frontend e minha paixão pela desenvolvimento web</p>
         </div>
-        <div class="wrapper">
+        <div class="about width">
+          <article class="about-section ">
+            <p class=""> <span></span>Meu nome é Joélisson Silva Santana. Desde a infância, sempre fui fascinado pela área da tecnologia. Aos 18 anos, iniciei minha jornada de estudos em programação e logo descobri minha paixão pelo desenvolvimento web. Desde então, tenho me dedicado intensamente a aprimorar minhas habilidades nessa área.</p>
+            <img src="img/about/window.svg" alt="janela de navegador">
+          </article>
+          <article class="about-section">
+            <img class="" src="img/about/progammer.svg" alt="ilustração progamador">
+            <p class=""> <span></span>Atualmente, estou focado em aperfeiçoar meus conhecimentos e dominar as tecnologias mais recentes do mercado. Estou dedicado a criar sites com um design moderno, estrutura limpa e escalável. Minha jornada de aprendizado é contínua e estou sempre em busca de aprimorar minhas habilidades.</p>
+          </article>
+        </div>
+      </section>
 
-          <div class="slide">
-            <div class="projects">
-              <h3>Joy Quiz</h3>
-              <div class="projects-grid">
-                <p>Joy Quiz foi o meu primeiro projeto, que utiliza HTML, CSS e JavaScript. É um jogo de quiz com 5 perguntas que fornece feedback em tempo real e exibe um resultado final personalizado no final.</p>
-                <div class="projects-tecnologies">
-                  <h4>Tecnologias Usadas</h4>
-                  <div class="projects-tecnologies-container">
-                    <img src="img/technologies/html-5.svg" title="html" alt="logo html">
-                    <span class="tecnologies-divisor">.</span>
-                    <img src="img/technologies/css-3.svg" title="css" alt="logo css">
-                    <span class="tecnologies-divisor">.</span>
-                    <img src="img/technologies/js.svg" title="javascript" alt="logo js">
-                  </div>
-                </div>
-                <div class="project-links">
-                  <img src="img/icons/Link.svg" alt="icone link">
-                  <a href="https://joelissonss.github.io/JoyQuiz/" target="_blank" rel="external">Acessar site</a>
-                  <img src="img/icons/github.svg" alt="logo github">
-                  <a href="https://github.com/JoelissonSS/JoyQuiz" target="_blank" rel="external">Ver código</a>
-                </div>
-                <img src="img/projects/mockup-JoyQuiz.png" width="260" height="200" alt="imgagem do site">
+      <section id="Habilidades" class="padding-heigth">
+        <div class="titleSection ">
+          <h2>Habilidades</h2>
+          <p>Essas são minhas principais habilidades interpessoal, profissional e técnica</p>
+        </div>
+        <div class="containerHabilidades width">
+          <article class="hard-skills">
+            <h3>Hard Skills</h3>
+            <div class="container-hard-skills">
+              <div class="hard-skills-items">
+                <img src="img/technologies/html-5.svg" alt="logo html">
+                <h4>HTML-5</h4>
+                <p>Linguagem de marcação para criar e estruturar conteúdo na web.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/css-3.svg" alt="logo css">
+                <h4>CSS3</h4>
+                <p>linguagem de estilo de páginas da web, design e formatação visual.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/js.svg" alt="logo javascript">
+                <h4>JavaScrip</h4>
+                <p>JavaScript: usada para interatividade em websites, aplicativos e servidores Node.js.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/git.svg" alt="logo git">
+                <h4>Git</h4>
+                <p>Sistema de controle de versão local para colaboração e rastreamento de código-fonte.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/github.svg" alt="logo github">
+                <h4>Github</h4>
+                <p>Plataforma de hospedagem de código-fonte e colaboração em projetos de desenvolvimento.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/reactjs.svg" alt="logo reactjs">
+                <h4>React JS</h4>
+                <p>Biblioteca JavaScript para criar interfaces de usuário interativas e reativas.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/nextjs.svg" alt="logo nextjs">
+                <h4>NextJs</h4>
+                <p>Framework JavaScript para construir aplicações web rápidas e escaláveis.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/figma.svg" alt="logo figma">
+                <h4>Figma</h4>
+                <p>Ferramenta de design colaborativa para criar protótipos e interfaces gráficas.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/gimp.svg" alt="logo gimp">
+                <h4>Gimp</h4>
+                <p>Software de edição de imagens gratuito e de código aberto.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/sass.svg" alt="logo sass">
+                <h4>Sass</h4>
+                <p>Pré-processador CSS que simplifica e otimiza o estilo de páginas.</p>
+              </div>
+              <div class="hard-skills-items">
+                <img src="img/technologies/tailwind.svg" alt="logo tailwind">
+                <h4>Tailwind</h4>
+                <p>Estrutura de design utilitário para desenvolvimento ágil de interfaces web.</p>
               </div>
             </div>
-            <div class="projects">
+          </article>
+          <article class="soft-skills">
+            <h3>Soft skills</h3>
+            <p class="soft-skills-items">Resolução de problemas de forma eficiente</p>
+            <p class="soft-skills-items">Atenção aos detalhes</p>
+            <p class="soft-skills-items">Criatividade na busca por soluções</p>
+            <p class="soft-skills-items">Capacidade de aprendizado contínuo</p>
+          </article>
+        </div>
+      </section>
 
-              <h3>Portfólio</h3>
-
-              <div class="projects-grid">
-
-                <p>Construí este portfólio pessoal a partir do zero, usando apenas tecnologias básicas da web, com a finalidade de demonstrar minhas habilidades e apresentar minha identidade.</p>
-
-                <div class="projects-tecnologies">
-
-                  <h4>Tecnologias Usadas</h4>
-
-                  <section class="projects-tecnologies-container">
-                    <img src="img/technologies/html-5.svg" title="html" alt="logo html">
-                    <span class="tecnologies-divisor"></span>
-                    <img src="img/technologies/css-3.svg" title="css" alt="logo css">
-                    <span class="tecnologies-divisor"></span>
-                    <img src="img/technologies/js.svg" title="javascript" alt="logo js">
-                  </section>
-                </div>
-
-                <div class="project-links">
-                  <img src="img/icons/Link.svg" alt="icone link">
-                  <a href="https://portfolio-joelisson.vercel.app/" target="_blank" rel="external">Acessar site</a>
-                  <img src="img/icons/github.svg" alt="logo github">
-                  <a href="https://github.com/JoelissonSS/Portfolio" target="_blank" rel="external">Ver código</a>
-                </div>
-
-                <img src="img/projects/mockup-Portfolio.png" width="260" height="200" alt="imagem do site">
-              </div>
-            </div>
+      <section id="Projetos" class="padding-heigth">
+        <div class="container-projects width">
+          <div class="titleSection">
+            <h2>Projetos</h2>
+            <p>Veja meus principais projetos que desenvolvi para aplicar meus conhecimentos na prática e adquirir experiência no desenvolvimento.</p>
           </div>
+          <div class="wrapper">
 
-        </div>
-      </div>
-    </section>
+            <div class="slide">
+              <div class="projects">
+                <h3>Joy Quiz</h3>
+                <div class="projects-grid">
+                  <p>Joy Quiz foi o meu primeiro projeto, que utiliza HTML, CSS e JavaScript. É um jogo de quiz com 5 perguntas que fornece feedback em tempo real e exibe um resultado final personalizado no final.</p>
+                  <div class="projects-tecnologies">
+                    <h4>Tecnologias Usadas</h4>
+                    <div class="projects-tecnologies-container">
+                      <img src="img/technologies/html-5.svg" title="html" alt="logo html">
+                      <span class="tecnologies-divisor">.</span>
+                      <img src="img/technologies/css-3.svg" title="css" alt="logo css">
+                      <span class="tecnologies-divisor">.</span>
+                      <img src="img/technologies/js.svg" title="javascript" alt="logo js">
+                    </div>
+                  </div>
+                  <div class="project-links">
+                    <img src="img/icons/Link.svg" alt="icone link">
+                    <a href="https://joelissonss.github.io/JoyQuiz/" target="_blank" rel="external">Acessar site</a>
+                    <img src="img/icons/github.svg" alt="logo github">
+                    <a href="https://github.com/JoelissonSS/JoyQuiz" target="_blank" rel="external">Ver código</a>
+                  </div>
+                  <img src="img/projects/mockup-JoyQuiz.png" width="260" height="200" alt="imgagem do site">
+                </div>
+              </div>
+              <div class="projects">
 
-  </main>
-  <footer>
-    <div class="footer width">
-      <div class="footer-p">
-        <div class="footer-text">
-          <h3>Esse foi meu portfolio!</h3>
-          <p>Obrigado por explorar meu portfólio. Estou pronto para colaborar e contribuir para projetos excepcionais. Se você procura um desenvolvedor web frontend dedicado e apaixonado, entre em contato. Estou ansioso para discutir oportunidades de trabalho juntos!</p>
+                <h3>Portfólio</h3>
+
+                <div class="projects-grid">
+
+                  <p>Construí este portfólio pessoal a partir do zero, usando apenas tecnologias básicas da web, com a finalidade de demonstrar minhas habilidades e apresentar minha identidade.</p>
+
+                  <div class="projects-tecnologies">
+
+                    <h4>Tecnologias Usadas</h4>
+
+                    <section class="projects-tecnologies-container">
+                      <img src="img/technologies/html-5.svg" title="html" alt="logo html">
+                      <span class="tecnologies-divisor"></span>
+                      <img src="img/technologies/css-3.svg" title="css" alt="logo css">
+                      <span class="tecnologies-divisor"></span>
+                      <img src="img/technologies/js.svg" title="javascript" alt="logo js">
+                    </section>
+                  </div>
+
+                  <div class="project-links">
+                    <img src="img/icons/Link.svg" alt="icone link">
+                    <a href="https://portfolio-joelisson.vercel.app/" target="_blank" rel="external">Acessar site</a>
+                    <img src="img/icons/github.svg" alt="logo github">
+                    <a href="https://github.com/JoelissonSS/Portfolio" target="_blank" rel="external">Ver código</a>
+                  </div>
+
+                  <img src="img/projects/mockup-Portfolio.png" width="260" height="200" alt="imagem do site">
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="footer-contact">
-          <h4>Contato:</h4>
-          <p>+55 (12) 991594802</p>
-          <p>joelisson997@gmail.com</p>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer width">
+        <div class="footer-p">
+          <div class="footer-text">
+            <h3>Esse foi meu portfolio!</h3>
+            <p>Obrigado por explorar meu portfólio. Estou pronto para colaborar e contribuir para projetos excepcionais. Se você procura um desenvolvedor web frontend dedicado e apaixonado, entre em contato. Estou ansioso para discutir oportunidades de trabalho juntos!</p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contato:</h4>
+            <p>+55 (12) 991594802</p>
+            <p>joelisson997@gmail.com</p>
+          </div>
         </div>
+        <p>todos os direitos autorais reservados &copy; <a href="https://www.linkedin.com/in/jo%C3%A9lisson-santana" target="_blank" rel="external">Joélisson Silva Santana</a></p>
       </div>
-      <p>todos os direitos autorais reservados &copy; <a href="https://www.linkedin.com/in/jo%C3%A9lisson-santana" target="_blank" rel="external">Joélisson Silva Santana</a></p>
-    </div>
-  </footer>
+    </footer>
+    <script type="module" src="script/script.js" defer></script>
+  </div>
+
 </body>
-<script type="module" src="script/script.js" defer></script>
+
 
 </html>

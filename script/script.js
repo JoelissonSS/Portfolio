@@ -8,3 +8,5 @@ selectSection();
 const slide = new SlideNav(".slide", ".wrapper");
 slide.init();
 slide.addControl();
+
+const init = document.querySelector('#app').style = 'display: block;'
