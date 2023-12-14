@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - 70px);
+  height: calc(100dvh - 70px);
 }
 
 .home-content {
